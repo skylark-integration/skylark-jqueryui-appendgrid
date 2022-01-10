@@ -75,7 +75,7 @@
   factory(define,require);
 
   if (!isAmd) {
-    var skylarkjs = require("skylark-langx/skylark");
+    var skylarkjs = require("skylark-langx-ns");
 
     if (isCmd) {
       module.exports = skylarkjs;
@@ -88,8 +88,9 @@
 
 define('skylark-jqueryui-appendgrid/appendGrid',[
     "skylark-langx/langx",
-    "skylark-utils-dom/query",
+    "skylark-domx-query",
     "skylark-jqueryui-interact/Sortable",
+    "skylark-jqueryui-interact/Resizable",
     "skylark-jqueryui/widgets/button",   
     "skylark-jqueryui/widgets/tooltip"   
 ],function(langx,$) {
@@ -1761,7 +1762,7 @@ define('skylark-jqueryui-appendgrid/appendGrid',[
 });
 
 define('skylark-jqueryui-appendgrid/main',[
-    "skylark-utils-dom/query",
+    "skylark-domx-query",
     "./appendGrid"
 ],function($) {
 	return $;

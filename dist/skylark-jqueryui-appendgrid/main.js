@@ -5,5 +5,5 @@
  * @link https://github.com/skylark-integration/skylark-jqueryui-appendgrid/
  * @license MIT
  */
-define(["skylark-utils-dom/query","./appendGrid"],function(e){return e});
+define(["skylark-domx-query","./appendGrid"],function(e){return e});
 //# sourceMappingURL=sourcemaps/main.js.map

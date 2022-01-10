@@ -1,7 +1,8 @@
 ﻿define([
     "skylark-langx/langx",
-    "skylark-utils-dom/query",
+    "skylark-domx-query",
     "skylark-jqueryui-interact/Sortable",
+    "skylark-jqueryui-interact/Resizable",
     "skylark-jqueryui/widgets/button",   
     "skylark-jqueryui/widgets/tooltip"   
 ],function(langx,$) {

@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":["define","$"],"mappings":";;;;;;;AAAAA,QACI,0BACA,gBACF,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n    \"skylark-utils-dom/query\",\r\n    \"./appendGrid\"\r\n],function($) {\r\n\treturn $;\r\n});"]}
+{"version":3,"sources":["main.js"],"names":["define","$"],"mappings":";;;;;;;AAAAA,QACI,qBACA,gBACF,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n    \"skylark-domx-query\",\r\n    \"./appendGrid\"\r\n],function($) {\r\n\treturn $;\r\n});"]}

@@ -14,7 +14,7 @@
   "homepage": "https://github.com/skylark-integration/skylark-jqueryui-appendgrid/",
   "author": "Hudaokeji, Inc.",
   "scripts": {
-    "build": "sbundle build ."
+    "build": "slib build ."
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,34 @@
   },
   "license": "MIT",
   "dependencies": {
-    "skylark-bootstrap3": "git+https://github.com/skylark-integration/skylark-bootstrap3.git#master",
-    "skylark-jquery": "git+https://github.com/skylark-integration/skylark-jquery.git#master",
-    "skylark-jqueryui": "git+https://github.com/skylark-integration/skylark-jqueryui.git#master",
-    "skylark-jqueryui-interact": "git+https://github.com/skylark-integration/skylark-jqueryui-interact.git#master",
-    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
-    "skylark-utils-dom": "git+https://github.com/skylarkutils/skylark-utils-dom.git#master"
+    "skylark-jquery": "git+https://github.com/skylark-integration/skylark-jquery.git",
+    "skylark-jqueryui": "git+https://github.com/skylark-integration/skylark-jqueryui.git",
+    "skylark-jqueryui-interact": "git+https://github.com/skylark-integration/skylark-jqueryui-interact.git",
+    "skylark-langx": "git+https://github.com/skylark-langx/skylark-langx.git"
+  },
+  "devDependencies": {
+    "skylark-bootstrap3": "git+https://github.com/skylark-integration/skylark-bootstrap3.git"
+  },
+  "skylarkjs": {
+    "directories": {
+      "dependencies": "./node_modules"
+    },
+    "secondaries": {},
+    "build": {
+      "prepare": {
+        "texttojs": [
+          "html",
+          "json",
+          "css"
+        ],
+        "jsxtojs": false,
+        "es6toamd": false,
+        "cjstoamd": false
+      },
+      "bundles": {
+        "all": true
+      }
+    }
   },
   "engines": {
     "node": ">=0.10.1"
